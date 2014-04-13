@@ -2,7 +2,6 @@ package com.andziks.sitcomorg;
 
 import java.util.Locale;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -19,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class SakumsActivity extends FragmentActivity {
-
+	
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -54,7 +53,11 @@ public class SakumsActivity extends FragmentActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.sakums, menu);
+        //1. Te jaabuut kaut kur pieglabaata seriaalu saraksta nolasiishana.
+		//2. Te arii saformee seriaalu lapas, katru sezonu savaa google cards lapaa.
+		//3. Katraa seriaala sezonas lapaa saveido epizoshu sarakstu.
+		//IDEJA: glabaat visu XML failaa!!!! struktureetaa! Un tad parseet!!!
+		getMenuInflater().inflate(R.menu.sakums, menu);
         return true;
     }
     
